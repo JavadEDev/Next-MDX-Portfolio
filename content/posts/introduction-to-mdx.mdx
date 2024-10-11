@@ -1,0 +1,123 @@
+---
+title: Introduction to MDX
+summary:
+  MDX is a powerful tool that allows you to write JSX in your markdown content.
+image: /images/posts/mdx.webp
+author: 'Javad Esmati'
+publishedAt: '2024-09-10'
+---
+
+## Introduction to [MDX](https://mdxjs.com 'MDX')
+
+MDX lets you mix **Markdown** with **JSX components** to build interactive
+documentation or pages.
+
+## Markdown Section
+
+- This is a bullet point.
+- This is another bullet point.
+
+You can also use JSX components inside an MDX file:
+
+Here’s a small React component example:
+
+```jsx
+const MyComponent = () => (
+  <div style={{ padding: '10px', border: '1px solid black' }}>
+    Hello, I'm a React component inside an MDX file!
+  </div>
+)
+```
+
+## What is MDX?
+
+MDX stands for **Markdown + JSX**. It is an extension of Markdown that allows
+you to use JSX (JavaScript XML) inside your Markdown files. With MDX, you can
+embed interactive components within your Markdown content, making it a powerful
+tool for creating rich, dynamic documents.
+
+## Key Features of MDX
+
+1. **Combines Markdown and JSX**: MDX extends the simplicity of Markdown, a
+   lightweight markup language, by integrating JSX. This enables developers to
+   include React components directly within Markdown files.
+
+2. **Dynamic Content**: Unlike standard Markdown, which is limited to static
+   content, MDX allows you to add dynamic content and interactivity by embedding
+   React components.
+
+3. **Fully Compatible with Markdown**: All regular Markdown syntax is supported
+   in MDX. You can write headings, lists, code blocks, and everything else you
+   would in standard Markdown, but with the added benefit of JSX components.
+
+4. **Component-Based Documentation**: Since you can import and use React
+   components, MDX is ideal for creating component-based documentation. This is
+   particularly useful for teams working with design systems or reusable UI
+   components.
+
+## Example
+
+```mdx
+# Welcome to My Page
+
+This is a standard Markdown paragraph.
+
+<CustomButton label='Click Me' />
+
+Here’s a list:
+
+- Item 1
+- Item 2
+- Item 3
+```
+
+```
+export syntax function getSource() {
+    const response = await fetch('https://api.example.com');
+    const data = await response.json();
+    return data;
+}
+```
+
+# Why Use MDX?
+
+MDX is gaining popularity among developers for its ability to combine the
+simplicity of Markdown with the power of JSX. But why should you use MDX? Below
+are several compelling reasons to consider using MDX for your next project.
+
+## 1. **Seamless Integration of Components and Content**
+
+MDX allows you to integrate React components directly into your Markdown. This
+means you can include interactive elements, live previews, charts, or any custom
+UI components without leaving your Markdown file.
+
+# My Component Example
+
+This is a regular Markdown section, but below is a React component:
+
+Now you can visualize your data interactively!
+
+# How to Use MDX?
+
+MDX (Markdown + JSX) allows you to write Markdown files with embedded React
+components, making it a powerful tool for building interactive and dynamic
+content. Here's how to get started using MDX in your project.
+
+## Step 1: Install MDX in Your Project
+
+First, you'll need to install the necessary MDX packages. If you're using a
+framework like Next.js or Gatsby, they already have plugins available for
+integrating MDX.
+
+### For a Next.js Project:
+
+```bash
+npm install @next/mdx @mdx-js/loader
+```
+
+## Conclusion
+
+Using MDX in your project enables you to create rich, dynamic content by
+combining the simplicity of Markdown with the interactivity of JSX. With just a
+few steps, you can set up MDX, write .mdx files, and render components within
+your Markdown, making it a flexible tool for documentation, blogs, and more.
