@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { getPostBySlug, getPosts } from '@/lib/posts'
 import { formatDate } from '@/lib/utils'
 import MDXContent from '@/components/mdx-content'
-import { notFound } from 'next/navigation'
 import NotFound from '@/app/not-found'
 
 type PostProps = {

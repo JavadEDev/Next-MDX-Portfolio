@@ -10,10 +10,12 @@
     "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.11",
     "@nextui-org/button": "2.0.37",
+    "@nextui-org/card": "^2.0.34",
     "@nextui-org/code": "2.0.32",
     "@nextui-org/input": "2.2.4",
     "@nextui-org/kbd": "2.0.33",
@@ -40,9 +42,13 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-hook-form": "^7.53.0",
+    "react-toastify": "^10.0.6",
+    "resend": "^4.0.0",
     "sugar-high": "^0.7.0",
     "tailwind-merge": "^2.5.2",
-    "three": "^0.169.0"
+    "three": "^0.169.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",

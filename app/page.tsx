@@ -9,6 +9,7 @@ import { GithubIcon } from '@/components/icons'
 import Intro from '@/components/intro'
 import RecentPosts from '@/components/recent-posts'
 import RecentProjects from '@/components/recent-projects'
+import NewsletterForm from '@/components/newsletter-form'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Intro />
           <RecentPosts />
           <RecentProjects />
+          <NewsletterForm />
         </div>
       </section>
       <section className='flex flex-col items-center justify-center gap-4 py-8 md:py-10'>

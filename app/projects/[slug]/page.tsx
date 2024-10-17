@@ -24,7 +24,7 @@ export default async function Project({ params }: ProjectProps) {
   const project = await getProjectBySlug(slug)
 
   if (!project) {
-    return <div>Not Found</div>
+    return NotFound()
   }
   const { metadata, content } = project
   const { title, image, author, publishedAt } = metadata
