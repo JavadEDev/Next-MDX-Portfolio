@@ -43,6 +43,9 @@ export async function subscribe(data: { email: string }) {
   if (result.error) {
     return { error: result.error.format() }
   }
+
+  return { success: true }
+  
   try {
     const { email } = result.data
     const { data: emailData, error } = await resend.emails.send({

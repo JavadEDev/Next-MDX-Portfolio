@@ -40,36 +40,38 @@ export default function NewsletterForm() {
 
   return (
     <section>
-      <Card className='rounded-lg border-0 dark:border'>
+      <Card className='rounded-xl border-0 bg-gradient-to-br from-blue-900 to-blue-300 dark:border'>
         <CardBody className='flex flex-col gap-8 pt-6 md:flex-row md:justify-around'>
           <div>
             <h2 className='text-2xl font-bold'>Subscribe to my newsletter</h2>
-            <p className='text-slate-600'>
+            <p className='text-slate-300'>
               Get updates on my work and projects.
             </p>
           </div>
           <div>
-            <Divider orientation='vertical' />
+            <Divider className='bg-zinc-300' orientation='vertical' />
           </div>
           <form
-            className='flex flex-col items-start gap-3'
+            className='flex flex-col gap-3'
             onSubmit={handleSubmit(processForm)}
           >
             <div className='w-full'>
               <Input
+                key='primary'
                 isRequired
                 autoComplete='email'
                 className='w-full'
+                color='primary'
                 id='email'
-                placeholder='Email'
+                placeholder='your@email.com'
                 radius='sm'
                 type='email'
-                variant='bordered'
+                variant='faded'
                 {...register('email')}
               />
 
               {errors.email?.message && (
-                <p className='ml-1 mt-2 text-sm text-rose-400'>
+                <p className='ml-1 mt-2 text-sm font-semibold text-rose-500'>
                   {errors.email.message}
                 </p>
               )}
