@@ -41,10 +41,10 @@ export default function RootLayout({
           fontEBGaramond.variable
         )}
       >
-        <Providers themeProps={{ attribute: 'class', defaultTheme: 'light' }}>
+        <Providers themeProps={{ attribute: 'class', defaultTheme: 'system' }}>
           <div className='relative flex h-screen flex-col'>
             <Navbar />
-            <main className='container mx-auto max-w-5xl flex-grow px-6 pt-16'>
+            <main className='container mx-auto max-w-5xl flex-grow pt-16'>
               {children}
             </main>
             <Footer />

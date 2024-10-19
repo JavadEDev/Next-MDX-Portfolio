@@ -28,36 +28,24 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: 'Profile',
-      href: '/profile'
+      label: 'Home',
+      href: '/'
     },
     {
-      label: 'Dashboard',
-      href: '/dashboard'
+      label: 'Posts',
+      href: '/posts'
     },
     {
       label: 'Projects',
       href: '/projects'
     },
     {
-      label: 'Team',
-      href: '/team'
+      label: 'Contact',
+      href: '/contact'
     },
     {
-      label: 'Calendar',
-      href: '/calendar'
-    },
-    {
-      label: 'Settings',
-      href: '/settings'
-    },
-    {
-      label: 'Help & Feedback',
-      href: '/help-feedback'
-    },
-    {
-      label: 'Logout',
-      href: '/logout'
+      label: 'About',
+      href: '/about'
     }
   ],
   links: {
@@ -65,6 +53,6 @@ export const siteConfig = {
     twitter: 'https://twitter.com/getnextui',
     docs: 'https://nextui.org',
     discord: 'https://discord.gg/9b6yyZKmH4',
-    sponsor: 'https://patreon.com/jrgarciadev'
+    sponsor: '/contact'
   }
 }
