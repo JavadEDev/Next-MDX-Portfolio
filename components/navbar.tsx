@@ -9,10 +9,10 @@ import {
 } from '@nextui-org/navbar'
 import { Button } from '@nextui-org/button'
 import { Link } from '@nextui-org/link'
-import { link as linkStyles } from '@nextui-org/theme'
 import NextLink from 'next/link'
-import clsx from 'clsx'
 import Image from 'next/image'
+
+import NavbarLinks from './nav-bar-links'
 
 import { siteConfig } from '@/config/site'
 import { ThemeSwitch } from '@/components/theme-switch'
@@ -22,7 +22,6 @@ import {
   DiscordIcon,
   HeartFilledIcon
 } from '@/components/icons'
-import NavbarLinks from './nav-bar-links'
 
 export const Navbar = () => {
   return (
